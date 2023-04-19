@@ -20,7 +20,7 @@ const Logo = () => {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        CB
+        Zaki
       </MotionLink>
     </div>
   );

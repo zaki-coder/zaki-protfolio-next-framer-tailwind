@@ -69,6 +69,10 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw"
         />
       </Link>
       <Link href={link} target="_blank">
@@ -77,7 +81,9 @@ const FeaturedArticle = ({img, title, time, summary, link}) => {
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold dark:text-primaryDark">{time}</span>
+      <span className="text-primary font-semibold dark:text-primaryDark">
+        {time}
+      </span>
     </li>
   );
 }
